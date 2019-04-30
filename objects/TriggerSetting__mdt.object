@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Trigger Setting</label>
+    <pluralLabel>Trigger Settings</pluralLabel>
+    <visibility>Protected</visibility>
+    <fields>
+        <fullName>IsActive__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Active</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Object__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Object</label>
+        <referenceTo>EntityDefinition</referenceTo>
+        <relationshipLabel>Trigger Settings</relationshipLabel>
+        <relationshipName>TriggerSettings</relationshipName>
+        <required>true</required>
+        <type>MetadataRelationship</type>
+        <unique>true</unique>
+    </fields>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>MasterLabel</columns>
+        <columns>Object__c</columns>
+        <columns>IsActive__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+</CustomObject>
